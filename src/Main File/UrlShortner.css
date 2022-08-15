@@ -61,6 +61,13 @@
   font-size: 1rem;
 }
 
+/* Footer */
+  .footer{
+    color:white;
+    margin-top: 40vh;
+    position: static;
+  }
+
 /* Background Animation */
 @keyframes animate {
   0%{

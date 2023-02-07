@@ -1,6 +1,6 @@
 
 ## 🔗 Links
-    LINK ->> https://tejodeep2002.github.io/UrlShortner-123/
+    LINK ->>https://tejodeep2002.github.io/UrlShortner-123/
 
 
 # Circular-Progress-Bar-with-pause-button

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import "./UrlShortner.css";
 
@@ -9,7 +9,7 @@ const LinkResult = ({ inputValue }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
-  const fetchData = async () => {
+  const fetchData =useCallback( async () => {
     try {
       setLoading(true);
       const res = await axios(
@@ -21,13 +21,13 @@ const LinkResult = ({ inputValue }) => {
     } finally {
       setLoading(false);
     }
-  };
+  },[inputValue]);
 
   useEffect(() => {
     if (inputValue.length) {
       fetchData();
     }
-  }, [inputValue]);
+  }, [fetchData, inputValue]);
 
   useEffect(() => {
     const timer = setTimeout(() => {

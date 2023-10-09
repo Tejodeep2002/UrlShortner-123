@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=Rubik+Dirt&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&family=Rubik+Dirt&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
-
-.headding {
+.heading {
   font-size: 50px;
-  font-family: DynaPuff,'Ubuntu';
-  color:rgba(247, 192, 10, 0.911);
+  font-family: DynaPuff, "Ubuntu";
+  color: rgba(247, 192, 10, 0.911);
 }
 
-.textlink {
+.textLink {
   width: 300px;
   height: 45px;
   border: 3px solid black;
@@ -29,12 +28,12 @@
 }
 
 @media screen and (max-width: 575px) {
-  .headding {
+  .heading {
     font-size: 42px;
-    font-family: DynaPuff,'Ubuntu';
-    color:rgba(247, 192, 10, 0.911);
+    font-family: DynaPuff, "Ubuntu";
+    color: rgba(247, 192, 10, 0.911);
   }
-  .textlink {
+  .textLink {
     width: 250px;
     height: 45px;
     border: 3px solid black;
@@ -44,19 +43,19 @@
   }
 }
 /* Result Styling */
-.result{
+.result {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .result p {
   border: 3px solid rgba(247, 192, 10, 0.911);
-  color:aliceblue;
+  color: aliceblue;
   border-radius: 20px;
   padding: 7px;
   margin: 0px;
 }
-.result button{
+.result button {
   border: 3px solid;
   border-radius: 20px;
   padding: 7px;
@@ -67,34 +66,34 @@
   font-weight: bold;
 }
 
-.result button.copied{
+.result button.copied {
   background: white;
   color: rgba(247, 192, 10, 0.911);
 }
 
-.noData{
-  color:white;
+.noData {
+  color: white;
   font-size: 1rem;
 }
 
 /* Footer */
-  .footer{
-    color:white;
-    margin-top: 40vh;
-    position: static;
-  }
+.footer {
+  color: white;
+  margin-top: 40vh;
+  position: static;
+}
 
 /* Background Animation */
 @keyframes animate {
-  0%{
-      transform: translateY(0) rotate(0deg);
-      opacity: 1;
-      border-radius: 0;
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
   }
-  100%{
-      transform: translateY(-1000px) rotate(720deg);
-      opacity: 0;
-      border-radius: 50%;
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
   }
 }
 

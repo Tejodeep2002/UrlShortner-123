@@ -1,29 +1,40 @@
 import React, { useState } from "react";
-import './UrlShortner.css';
+import "./UrlShortner.css";
 
+const Textarea = ({ setInputValue }) => {
+  const [value, setValue] = useState("");
 
-const Textarea=({setInputValue})=> {
-  const [value,setValue] = useState("");
-
-  const handleSubmit=()=>{
+  const handleSubmit = () => {
     setInputValue(value);
     setValue("");
-  }
+  };
 
-  const handleOnChange=(event)=>{
+  const handleOnChange = (event) => {
     setValue(event.target.value);
-  }
-    return (
-      <div>
-        <span className='headding'>UrlShortner 123</span>
-        <form className="form">
-            <input type='text' className='textlink' value={value} id='textlink' onChange={handleOnChange} placeholder="Enter Your Link"></input>
-            <button type="button" className="submit" onClick={handleSubmit} id='sumbit'>Submit</button>
-        </form>
-        
-      </div>
-    );
-
-}
+  };
+  return (
+    <div>
+      <span className="heading">UrlShortner 123</span>
+      <form className="form">
+        <input
+          type="text"
+          className="textLink"
+          value={value}
+          id="textLink"
+          onChange={handleOnChange}
+          placeholder="Enter Your Link"
+        ></input>
+        <button
+          type="button"
+          className="submit"
+          onClick={handleSubmit}
+          id="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  );
+};
 
 export default Textarea;
